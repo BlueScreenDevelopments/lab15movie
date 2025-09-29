@@ -4,6 +4,13 @@
 #include <fstream>
 using namespace std;
 
+/*
+Brandon Julao
+COMSC-210-5470
+09.28.25
+Movie Class + Text Input
+*/
+
 class Movie{
 private:
     string title;
