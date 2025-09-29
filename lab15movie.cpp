@@ -65,6 +65,13 @@ public:
         }
 
         inFile.close();
+
+        //printouts
+        for (const auto &m : movies) {
+            m.print();
+        }
+        
+        return 0; 
     }
-    
+   
 };
