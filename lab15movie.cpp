@@ -37,4 +37,33 @@ public:
         cout << endl;
 
     }
+
+    int main(){
+
+        //intialize text file
+        ifstream inFile("input.txt");
+        
+        //container for movies
+        vector<Movie> movies;
+       
+        //temp
+        string title;
+        int year;
+        string screenWriter;
+
+        while (getline(inFile, title)){
+        inFile >> year;
+        inFile.ignore();
+        getline(inFile, screenWriter);
+
+        Movie temp;
+        temp.setTitle(title);
+        temp.setYearReleased(year);
+        temp.setScreenWriter(screenWriter);
+
+        movies.push_back(temp);
+        }
+
+    
+    }
 };
