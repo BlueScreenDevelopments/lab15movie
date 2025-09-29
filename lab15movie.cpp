@@ -64,6 +64,7 @@ public:
         movies.push_back(temp);
         }
 
-    
+        inFile.close();
     }
+    
 };
